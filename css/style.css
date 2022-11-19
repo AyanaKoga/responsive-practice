@@ -104,6 +104,7 @@
 .Q5_box{
   width: 1200px;
   display: flex;
+  flex-direction: row;
 }
 
 
@@ -126,6 +127,15 @@
   .Q5_box{
     display: flex;
     flex-direction: row-reverse;
+  }
+  .Q5_redbox{
+    background: #ff0000;
+  }
+  .Q5_bluebox{
+    background: #0008ff;
+  }
+  .Q5_orangebox{
+    background: #ff8400;
   }
 }
 
@@ -153,9 +163,11 @@
 
 .Q6_greenbox{
   background: #00ff51;
+  order: 1;
 }
 .Q6_yellowbox{
   background: #d4ff00;
+  order: 2;
 }
 .Q6_pinkbox{
   background: #ff00e1;
@@ -181,11 +193,10 @@
 /*Q7------------------------------------*/
 .Q7_box{
   width: 800px;
+  display: flex;
+  flex-direction: row;
 }
 
-.pc{
-  display: flex;
-}
 
 .Q7_bluebox,.Q7_redbox,.Q7_greenbox{
   width: 400px;
@@ -204,17 +215,15 @@
 }
 
 @media screen and (max-width: 960px){
-  .Q7_box{
-    width: 800px;
-    display: flex;
-  }
   .Q7_redbox{
     display: none;
+    background: #ff0000;
   }
   .Q7_greenbox{
     background: #00ff51;
   }
   .Q7_bluebox{
+    background: #0008ff;
     display: block;
   }
 }
