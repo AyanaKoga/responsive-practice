@@ -128,15 +128,6 @@
     display: flex;
     flex-direction: row-reverse;
   }
-  .Q5_redbox{
-    background: #ff0000;
-  }
-  .Q5_bluebox{
-    background: #0008ff;
-  }
-  .Q5_orangebox{
-    background: #ff8400;
-  }
 }
 
 
@@ -204,6 +195,7 @@
 }
 
 .Q7_redbox{
+  display: block;
   background: #ff0000;
 }
 .Q7_greenbox{
@@ -217,13 +209,8 @@
 @media screen and (max-width: 960px){
   .Q7_redbox{
     display: none;
-    background: #ff0000;
-  }
-  .Q7_greenbox{
-    background: #00ff51;
   }
   .Q7_bluebox{
-    background: #0008ff;
     display: block;
   }
 }
